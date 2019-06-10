@@ -1,0 +1,33 @@
+.book{
+    @include wrapper;
+    padding-top: 90px;
+    max-width: 1170px;
+}
+.book-wrapper{
+    
+}
+.book-item{
+    @include row-flex;
+    justify-content: space-between;
+    font-size: 28px;
+    color: #222222;
+    margin-bottom: 200px;
+
+}
+.book__text{
+    max-width: 689px;
+    font-weight: 600;
+    @include size-md(12);
+    @include md-block(){
+        margin: 0 auto;
+    }
+
+}
+.book__img {
+    margin: 0 auto;
+    text-align: center;
+    @include size-md(12);
+    @include md-block(){
+        text-align: center;
+    }
+}
